@@ -1,0 +1,39 @@
+<div class="sayfa">
+    <form [formGroup] = "ilanForm" (ngSubmit)="submit()">
+        <div class="mb-3">
+            <label for="txtIsim" class="form-label">İsim</label>
+            <input formControlName="isim" type="text" class="form-control" id="txtIsim" aria-describedby="isim">
+        </div>
+        
+        <div class="mb-3">
+            <label for="txtSoyisim" class="form-label">Soyisim</label>
+            <input formControlName="soyisim" type="text" class="form-control" id="txtSoyisim" aria-describedby="soyisim">
+        </div>
+        
+        <select formControlName="yazilimDili" class="form-select my-2" aria-label="Dil Seçiniz">
+            <option selected value="0">Bir Yazılım Dili Seçiniz</option>
+            <option value="1">Java</option>
+            <option value="2">Angular</option>
+            <option value="3">.NET</option>
+        </select>
+        
+        <div class="mb-3">
+          <label for="txtIsTanimi" class="form-label">İş Tanımı</label>
+          <textarea formControlName="isTanimi" class="form-control" id="txtIsTanimi" rows="3" aria-describedby="isTanimi"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="txtSure" class="form-label">Süre</label>
+            <input formControlName="sure" type="text" class="form-control" id="txtSure" aria-describedby="sure">
+          </div>
+        
+        <div class="mb-3">
+            <label for="txtUcret" class="form-label">Ücret</label>
+            <input formControlName="ucret" type="number" class="form-control" id="txtUcret" aria-describedby="ucret">
+        </div>
+
+        <button class="btn btn-primary" type="submit">İlan Ver</button>
+        <button class="btn btn-warning ms-2">Geri</button>
+
+      </form>
+</div>

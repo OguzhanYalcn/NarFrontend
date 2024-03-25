@@ -1,0 +1,32 @@
+<section class="vh-100 gradient-custom">
+  <form class="h-100" (submit)="login()">
+      <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                  <div class="card bg-dark" style="border-radius: 1rem;">
+                      <div class="card-body px-5 text-center">
+                          <div class="mt-md-4 pb-5">
+                              <h2 class="fw-bold mb-2 text-white text-uppercase">Login</h2>
+                              <p class="text-white-50 mb-5">Please enter your login and password!</p>
+                              <div class="form-floating mb-4">
+                                  <input formControlName="email" name="email" type="email" id="typeEmailX"
+                                      class="form-control" placeholder="name@example.com" />
+                                  <label for="typeEmailX">Email</label>
+                                  </div>
+
+                              <div class="form-floating form-white mb-4">
+                                  <input formControlName="password" name="password" type="password" id="typePasswordX"
+                                      class="form-control form-control-lg" placeholder="name@example.com"/>
+                                      <label for="typePasswordX">Password</label>
+                                  </div>
+                              <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                              <button class="btn btn-outline-light btn-lg ms-4 px-5" type="button" (click)="signUp()">Sign Up</button>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </form>
+</section>

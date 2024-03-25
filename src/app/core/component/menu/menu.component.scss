@@ -1,0 +1,16 @@
+a {
+    cursor: pointer;
+}
+
+.kategoriler {
+    width: 8rem;
+    margin: 1rem;
+    button {
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+    .aktifKategori {
+        background-color: red;
+    }
+}
+
