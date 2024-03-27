@@ -11,8 +11,8 @@ import { FormBuilder } from '@angular/forms';
 })
 export class LoginComponent {
   //loginForm = this.fb.nonNullable.group({
-    email = '';
-    password = '';
+    email = 'levent';
+    password = 'levent';
   //});
 
   constructor(
